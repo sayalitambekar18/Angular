@@ -1,0 +1,156 @@
+#img3 {
+  background-image: url("../../assets/pic1.png");
+  background-size: 100%;
+    margin-top: 2%;
+}
+.logo{
+    margin-top:2%;
+    margin-left:8%;
+}
+
+.h1 {
+  color:Black;
+  text-align: center;
+  font-size: 30px;
+  margin-top: -9%;
+}
+
+.p {
+  color: black;
+  text-align: center;
+  font-size: 18px;
+  margin-top: 2%;
+  line-height:25px;
+}
+
+.b{
+    text-align: center;
+    margin-top:40px;
+    font-size:20px;
+}
+
+.txt {
+  text-align: center;
+  font-size: 15px;
+  margin-top: 2em;
+  font-family: 'Trebuchet MS';
+  line-height: 30px;
+  position: relative;
+}
+
+.card {
+  height: 60px;
+  width: 300px;
+  align-content: center;
+  background-color: yellow;
+  text-align: center;
+  font-size: 15px;
+  margin: 4% 0% 0% 42%;
+  border-radius: 15px;
+  box-shadow: 5px 0px 10px gray;
+}
+.txt1 {
+  color: black;
+  text-align: center;
+  margin-top: 2em;
+  line-height:30px;
+  font-size:10px;
+}
+
+.default {
+  margin-top: 2%;
+  border-bottom: 4px solid gainsboro;
+}
+
+.port {
+  color: blue;
+  text-align: center;
+  font-size: 30px;
+  font-family: arial;
+  margin-top: 20px;
+}
+
+.txt2 {
+  color: black;
+  font-size: 18px;
+  margin-top: 1em;
+  font-family: calibri;
+  line-height: 30px;
+}
+
+#img4 {
+  background-image: url("../../assets/tech.jpg");
+  background-size: 100%;
+}
+
+.Box-row {
+  display: flex;
+  justify-content: space-between;
+  justify-content: center;
+  margin-top: 5%;
+}
+
+.Box {
+  height: 200px;
+  width: 300px;
+  position: relative;
+  background-color: white;
+  text-align: center;
+  font-size: 15px;
+}
+
+.p1 {
+  color: black;
+}
+
+.Box-row1 {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 5%;
+}
+
+.Box1,
+.Box2,
+.Box3 {
+  height: 350px;
+  width: 400px;
+  position: relative;
+  background-color: white;
+  text-align: center;
+  color: red;
+  border-radius: 15px;
+  box-shadow: 5px 0px 10px gray;
+  justify-items: center;
+}
+
+.p2 {
+  color: black;
+  font-size: 25px;
+  font-family: calibri;
+  margin-top:8%;
+}
+
+.cd {
+  display: flex;
+  position: relative;
+}
+
+.cd1 {
+  height: 250px;
+  width: 100%;
+  margin-top: 50px;
+  background-color: darkblue;
+  border-bottom: 10px solid gainsboro;
+  text-align: center;
+}
+
+.t1 {
+  color: white;
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+.t2 {
+  font-size: 15px;
+  color: white;
+}

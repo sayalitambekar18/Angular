@@ -1,0 +1,41 @@
+.title {
+  text-align: center;
+  font-size: 30px;
+  margin: 5% 0% 0% 0%;
+  letter-spacing: 5px;
+  color: red;
+}
+
+.p {
+  text-align: center;
+  margin: 10px 0px 0px 50px;
+  line-height: 30px;
+  font-size: 15px;
+}
+
+.img {
+  margin: -3% 0% 0% 15%;
+}
+
+.row {
+  display: flex;
+  margin-left: 20em;
+}
+
+.column {
+  flex: 25%;
+  max-width: 40%;
+}
+
+.column img {
+  margin-top: 5em;
+  width: 100%;
+}
+
+.p1 {
+  text-align: justify;
+  margin-top: 5%;
+  line-height: 30px;
+  font-size: 15px;
+
+}

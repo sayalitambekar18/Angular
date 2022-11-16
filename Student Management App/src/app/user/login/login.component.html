@@ -1,0 +1,31 @@
+   <form class="login-form-container" [formGroup]="loginform" (ngSubmit)="dologin()">
+     <mat-card class="login-card">
+       <mat-card-title>Login</mat-card-title>
+       <mat-card-content class="mat-cart-content">
+
+         <mat-form-field>
+           <mat-label>Email</mat-label>
+           <input matInput placeholder=" example@abc.com" formControlName="email">
+           <mat-error *ngIf="email.invalid">
+             <ng-container *ngIf="email.errors?.['required']">
+               Please Enter your Email...
+             </ng-container>
+           </mat-error>
+         </mat-form-field>
+
+         <mat-form-field>
+           <mat-label>Password</mat-label>
+           <input matInput placeholder="abc@123" formControlName="password">
+           <mat-error *ngIf="password.invalid">
+             <ng-container *ngIf="password.errors?.['required']">
+               Please Enter your password..
+             </ng-container>
+           </mat-error>
+         </mat-form-field>
+         <mat-card-actions>
+           <button mat-raised-button color="primary" [disabled]="loginform.invalid">Login</button>
+           New member? please <a [routerLink]="['/user','register']">click here </a>
+         </mat-card-actions>
+       </mat-card-content>
+     </mat-card>
+   </form>

@@ -1,0 +1,66 @@
+<div class="container">
+  <form (submit)="savestud()" #formstud="ngForm">
+    <div class="mt-2">
+      <label for="studId">Student Id</label>
+      <input type="text" id="studId" class="form-control" [(ngModel)]="studform.studId" name="studId" #studId="ngModel"
+        required />
+      <div [hidden]="studId.valid || studId.pristine" class="alert alert-danger">
+        Please Enter the Id...
+      </div>
+    </div>
+    <div class="mt-2">
+      <label for="studName">Student Name</label>
+      <input type="text" name="studName" id="studName" class="form-control" [(ngModel)]="studform.studName" required
+        #studName="ngModel" pattern="^[A-Za-z]{3,8}\s[A-Za-z]{3,8}$" />
+      <div class="alert alert-danger" [hidden]="studName.valid||studName.pristine">
+        <span *ngIf="studName.errors?.['required']">
+          Please Enter the Name...
+        </span>
+        <span *ngIf="studName.errors?.['pattern']">
+          Student Name contain only the alphabets...
+        </span>
+      </div>
+    </div>
+    <div class="mt-2">
+      <label for="studAddress">Student Address</label>
+      <input type="text" name="studAddress" id="studAddress" class="form-control" [(ngModel)]="studform.studAddress"
+        required #studAddress="ngModel" pattern="^[A-Za-z]{3,8}$" />
+      <div class="alert alert-danger" [hidden]="studAddress.valid||studAddress.pristine">
+        <span *ngIf="studAddress.errors?.['required']">
+          Please Enter the Address
+        </span>
+        <span *ngIf="studAddress.errors?.['pattern']">
+          Student Address contain only the alphabets...
+        </span>
+      </div>
+    </div>
+    <div class="mt-2">
+      <label for="studDOB">Student DOB</label>
+      <input type="date" name="studDOB" id="studDOB" class="form-control" [(ngModel)]="studform.studDOB">
+    </div>
+    <div class="mt-2">
+      <label for="studMobileNo">Student Mobile No</label>
+      <input type="number" name="studTotalFees" id="studMobileNo" class="form-control"
+        [(ngModel)]="studform.studMobileNo">
+    </div>
+    <div class="mt-2">
+      <label for="studDepartment">Student Department</label>
+      <input type="text" name="studDepartment" id="studDepartment" class="form-control"
+        [(ngModel)]="studform.studDepartment">
+    </div>
+    <div class="mt-2">
+      <label for="studFees">Student Fees</label>
+      <input type="number" name="studFees" id="studFees" class="form-control" [(ngModel)]="studform.studFees">
+    </div>
+    <div class="mt-2">
+      <label for="studAdmissionDate">Student Admission Date</label>
+      <input type="date" name="studAdmissionDate" id="studAdmissionDate" class="form-control"
+        [(ngModel)]="studform.studAdmissionDate">
+    </div>
+    <div class="mt-2">
+      <label for="studImage">Student Image</label>
+      <input type="file" name="studImage" id="studImage" class="form-control" [(ngModel)]="studform.studImage">
+    </div>
+    <input class="btn btn-outline-success mt-2" type="submit" value="Save">
+  </form>
+</div>

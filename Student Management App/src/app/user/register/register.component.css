@@ -1,0 +1,26 @@
+.register-form-container{
+    display: flex;
+    flex-direction: column;
+    /* Horizontal Center*/
+    align-items: center;
+    /* vertical Center;*/
+    justify-content: center;
+    height: 100%;
+}
+.register-card{
+    width:40rem;
+    background-color:whitesmoke;
+
+}
+.mat-card-content{
+    display: flex;
+    flex-direction: column;
+      text-align: center;
+}
+.mat-card-title{
+        text-align: center;
+
+}
+.mat-form-field{
+    text-align: center;
+}

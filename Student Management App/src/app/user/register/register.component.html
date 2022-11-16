@@ -1,0 +1,52 @@
+   <form class="register-form-container" [formGroup]="regform" (ngSubmit)="doregister()">
+     <mat-card class="register-card">
+       <mat-card-title>Register</mat-card-title>
+       <mat-card-content class="mat-cart-content">
+         <mat-form-field>
+           <mat-label>Name</mat-label>
+           <input matInput placeholder="FirstName LastName" formControlName="name">
+           <mat-error *ngIf="name.invalid">
+             <ng-container *ngIf="name.errors?.['required']">
+               Please Enter your name to
+             </ng-container>
+           </mat-error>
+         </mat-form-field>
+
+         <mat-form-field>
+           <mat-label>Age</mat-label>
+           <input matInput placeholder=" " formControlName="age">
+           <mat-error *ngIf="age.invalid">
+             <ng-container *ngIf="age.errors?.['required']">
+               Please Enter your Age...
+             </ng-container>
+           </mat-error>
+         </mat-form-field>
+
+         <mat-form-field>
+           <mat-label>Email</mat-label>
+           <input matInput placeholder="example@abc.com" formControlName="email">
+           <mat-error *ngIf="email.invalid">
+             <ng-container *ngIf="email.errors?.['required']">
+               Please Enter your Email...
+             </ng-container>
+           </mat-error>
+         </mat-form-field>
+
+         <mat-form-field>
+           <mat-label>Password</mat-label>
+           <input matInput placeholder="abc@123" formControlName="password">
+           <mat-error *ngIf="password.invalid">
+             <ng-container *ngIf="password.errors?.['required']">
+               Please Enter your password..
+             </ng-container>
+           </mat-error>
+         </mat-form-field>
+         <mat-card-actions>
+           <button mat-raised-button color="primary" [disabled]="regform.invalid">Register</button>
+
+           Areadly a member? please <a [routerLink]="['/user','login']">click here </a>
+
+         </mat-card-actions>
+       </mat-card-content>
+     </mat-card>
+   </form>
